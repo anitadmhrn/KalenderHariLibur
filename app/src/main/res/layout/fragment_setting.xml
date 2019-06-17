@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Toolbar"
+        app:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+        app:title="Pengaturan"
+        app:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="56dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:text="Manual" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="@dimen/normal_margin"
+                android:paddingRight="@dimen/normal_margin"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mulai hari Senin"
+                    android:textColor="@color/text_color_primary_dark"
+                    android:textSize="@dimen/primary_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_start"
+                    android:text="Mulai setiap minggu dari hari Senin"
+                    android:textSize="@dimen/hint_font_size" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sc_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:background="@color/divider_dark" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="@dimen/normal_margin"
+                android:paddingRight="@dimen/normal_margin"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_replenish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Padding tanggal"
+                    android:textColor="@color/text_color_primary_dark"
+                    android:textSize="@dimen/primary_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_replenish"
+                    android:text="Akan mengisi tanggal bulan yang berdekatan di tempat kosong"
+                    android:textSize="@dimen/hint_font_size" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sc_replenish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:background="@color/divider_dark" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="@dimen/normal_margin"
+                android:paddingRight="@dimen/normal_margin"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_anim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aktifkan animasi Pilih"
+                    android:textColor="@color/text_color_primary_dark"
+                    android:textSize="@dimen/primary_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_anim"
+                    android:text="Animasi akan diaktifkan ketika Anda mengklik untuk memilih tanggal (jika ini tidak lancar, Anda dapat mematikan opsi ini)"
+                    android:textSize="@dimen/hint_font_size" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sc_anim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:background="@color/divider_dark" />
+
+            <RelativeLayout
+                android:id="@+id/rl_theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="@dimen/normal_margin"
+                android:paddingRight="@dimen/normal_margin"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tema"
+                    android:textColor="@color/text_color_primary_dark"
+                    android:textSize="@dimen/primary_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_theme"
+                    android:text="Pilih warna yang Anda suka."
+                    android:textSize="@dimen/hint_font_size" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:background="@color/divider_dark" />
+
+            <RelativeLayout
+                android:id="@+id/rl_symbol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="@dimen/normal_margin"
+                android:paddingRight="@dimen/normal_margin"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengaturan simbol"
+                    android:textColor="@color/text_color_primary_dark"
+                    android:textSize="@dimen/primary_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_symbol"
+                    android:text="Preview Simbol"
+                    android:textSize="@dimen/hint_font_size" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:background="@color/divider_dark" />
+
+            <RelativeLayout
+                android:id="@+id/rl_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="@dimen/normal_margin"
+                android:paddingRight="@dimen/normal_margin"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengaturan ulang tahun"
+                    android:textColor="@color/text_color_primary_dark"
+                    android:textSize="@dimen/primary_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_birth"
+                    android:text="Anda dapat menambahkan catatan ulang tahun ke kalender Anda."
+                    android:textSize="@dimen/hint_font_size" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:background="@color/divider_dark" />
+
+            <RelativeLayout
+                android:id="@+id/rl_ui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="@dimen/normal_margin"
+                android:paddingRight="@dimen/normal_margin"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_ui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penyesuaian tampilan"
+                    android:textColor="@color/text_color_primary_dark"
+                    android:textSize="@dimen/primary_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_ui"
+                    android:text="Antarmuka dapat disesuaikan untuk membuat antarmuka terlihat lebih harmonis"
+                    android:textSize="@dimen/hint_font_size" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:background="@color/divider_dark" />
+
+            <RelativeLayout
+                android:id="@+id/rl_holiday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="@dimen/normal_margin"
+                android:paddingRight="@dimen/normal_margin"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_holiday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sinkronisasi liburan"
+                    android:textColor="@color/text_color_primary_dark"
+                    android:textSize="@dimen/primary_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_holiday"
+                    android:text="Klik untuk menyinkronkan hari libur"
+                    android:textSize="@dimen/hint_font_size" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:text="Widget" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:background="@color/divider_dark" />
+
+            <RelativeLayout
+                android:id="@+id/rl_trans_widget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="@dimen/normal_margin"
+                android:paddingRight="@dimen/normal_margin"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/rl_trans_widget_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Widget transparan"
+                    android:textColor="@color/text_color_primary_dark"
+                    android:textSize="@dimen/primary_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_trans_widget_title"
+                    android:text="Edit widget transparan"
+                    android:textSize="@dimen/hint_font_size" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:background="@color/divider_dark" />
+
+            <RelativeLayout
+                android:id="@+id/rl_widget_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="@dimen/normal_margin"
+                android:paddingRight="@dimen/normal_margin"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_pic_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gambar widget putih"
+                    android:textColor="@color/text_color_primary_dark"
+                    android:textSize="@dimen/primary_font_size" />
+
+                <TextView
+                    android:id="@+id/tv_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_pic_title"
+                    android:text="Dapat mengganti gambar di sudut kanan bawah widget putih"
+                    android:textSize="@dimen/hint_font_size" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

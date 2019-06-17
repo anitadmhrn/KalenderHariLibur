@@ -1,0 +1,169 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--Warna memo daftar acara-->
+    <attr name="eventBackground" format="color" />
+    <attr name="colorPrimary" format="color" />
+    <attr name="colorPrimaryDark" format="color" />
+    <attr name="colorAccent" format="color" />
+
+    <attr name="transparentWidgetTextColor" format="color|reference" />
+    <attr name="transparentWidgetCircleSolid" format="color|reference" />
+    <attr name="transparentEventColor" format="color|reference" />
+    <attr name="transparentLaunchIcon" format="reference" />
+    <attr name="transparentBirthIcon" format="color|reference" />
+    <!-- Base application theme. -->
+
+    <style name="NumberPicker">
+        <item name="android:textColorSecondary">@color/divider_dark</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ColorSecondaryAccent">
+        <item name="android:textColorSecondary">@color/divider_dark</item>
+    </style>
+
+    <style name="ColorSecondaryWhite">
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.OverFlow</item>
+    </style>
+
+    <style name="AppTheme.OverFlow" parent="Base.ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:src">@drawable/ic_more_vert_white_24dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?actionBarSize</item>
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:elevation" tools:targetApi="lollipop">4dp</item>
+    </style>
+
+    <style name="ColorSquare">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="RadioButton">
+        <item name="android:theme">@style/ColorSecondaryAccent</item>
+        <item name="android:textSize">@dimen/primary_font_size</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="eventBackground">@color/colorEvent</item>
+    </style>
+
+    <style name="AppTheme.Pink" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary.Pink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark.Pink</item>
+        <item name="colorAccent">@color/colorAccent.Pink</item>
+        <item name="eventBackground">@color/colorEvent.Pink</item>
+    </style>
+
+    <style name="AppTheme.Green" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary.Green</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark.Green</item>
+        <item name="colorAccent">@color/colorAccent.Green</item>
+        <item name="eventBackground">@color/colorEvent.Green</item>
+    </style>
+
+    <style name="AppTheme.Teal" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary.Teal</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark.Teal</item>
+        <item name="colorAccent">@color/colorAccent.Teal</item>
+        <item name="eventBackground">@color/colorEvent.Teal</item>
+    </style>
+
+    <style name="AppTheme.Blue" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary.Blue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark.Blue</item>
+        <item name="colorAccent">@color/colorAccent.Blue</item>
+        <item name="eventBackground">@color/colorEvent.Blue</item>
+    </style>
+
+    <style name="AppTheme.Black" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary.Black</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark.Black</item>
+        <item name="colorAccent">@color/colorAccent.Black</item>
+        <item name="eventBackground">@color/colorEvent.Black</item>
+    </style>
+
+    <style name="AppTheme.Red" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary.Red</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark.Red</item>
+        <item name="colorAccent">@color/colorAccent.Red</item>
+        <item name="eventBackground">@color/colorEvent.Red</item>
+    </style>
+
+    <style name="AppTheme.Purple" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary.Purple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark.Purple</item>
+        <item name="colorAccent">@color/colorAccent.Purple</item>
+        <item name="eventBackground">@color/colorEvent.Purple</item>
+    </style>
+
+    <style name="AppTheme.alarm" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary_alarm</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_alarm</item>
+        <item name="colorAccent">@color/colorAccent_alarm</item>
+        <item name="actionModeBackground">@color/colorPrimary_alarm</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="SubtitleText">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+    
+    <style name="AppTheme.Translucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="reset_btn">
+        <item name="android:layout_gravity">right|center_vertical</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WidgetTextColor">
+        <item name="transparentWidgetTextColor">@color/text_color_primary_dark</item>
+        <item name="transparentEventColor">@color/text_color_primary_dark</item>
+        <item name="transparentLaunchIcon">@drawable/ic_open_in_new_black_24dp</item>
+        <item name="transparentBirthIcon">@drawable/ic_svg_black_birthday</item>
+        <item name="transparentWidgetCircleSolid">#33ffffff</item>
+    </style>
+
+    <style name="WidgetTextColor.Light">
+        <item name="transparentWidgetTextColor">@color/text_color_primary_light</item>
+        <item name="transparentEventColor">@color/text_color_primary_light</item>
+        <item name="transparentLaunchIcon">@drawable/ic_open_in_new_white_24dp</item>
+        <item name="transparentBirthIcon">@drawable/ic_svg_birthday</item>
+        <item name="transparentWidgetCircleSolid">#33333333</item>
+    </style>
+</resources>

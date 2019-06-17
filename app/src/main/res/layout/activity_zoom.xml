@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="androidcustomcalendar.adms.com.calender.ui.activity.ZoomActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Toolbar"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+            app:navigationIcon="@drawable/ic_clear_white_24dp"
+            app:title="Penyesuaian antarmuka"
+            app:titleTextColor="@android:color/white" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Catatan: Bergantung pada sistem, beberapa konten mungkin perlu direstart untuk ditampilkan dengan benar."
+                android:textColor="#f00" />
+
+
+            <androidcustomcalendar.adms.com.calender.ui.view.CalendarView
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#fff"
+                android:elevation="2dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:cv_dateBottomTextSize="@dimen/bottom_text_size"
+                app:cv_dateCircleColor="?colorPrimary"
+                app:cv_dateCircleSize="@dimen/date_circle_size"
+                app:cv_dateHeight="@dimen/item_day_size"
+                app:cv_dateMargin="2dp"
+                app:cv_dateTextColor="@color/text_color_sub_dark"
+                app:cv_dateTextSize="@dimen/date_text_size"
+                app:cv_eventRectSize="3dp"
+                app:cv_holidayTextColor="?colorPrimary"
+                app:cv_holidayTextSize="@dimen/holiday_text_size"
+                app:cv_todayTextColor="@color/text_color_primary_light"
+                app:cv_weekTextSize="@dimen/week_text_size"
+                app:cv_weekdayTextColor="@color/text_color_primary_light"
+                app:cv_weekendTextColor="?colorPrimary" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_dpi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp" />
+
+                <Button
+                    android:id="@+id/btn_reset_dpi"
+                    style="@style/reset_btn"
+                    android:onClick="reset"
+                    android:text="Setel ulang" />
+            </FrameLayout>
+
+
+            <SeekBar
+                android:id="@+id/sb_dpi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="960" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_day_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp" />
+
+                <Button
+                    android:id="@+id/btn_reset_day_size"
+                    style="@style/reset_btn"
+                    android:onClick="reset"
+                    android:text="Setel ulang" />
+            </FrameLayout>
+
+
+            <SeekBar
+                android:id="@+id/sb_day_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_number_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp" />
+
+                <Button
+                    android:id="@+id/btn_reset_number"
+                    style="@style/reset_btn"
+                    android:onClick="reset"
+                    android:text="Setel ulang" />
+            </FrameLayout>
+
+
+            <SeekBar
+                android:id="@+id/sb_number_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_lunar_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp" />
+
+                <Button
+                    android:id="@+id/btn_reset_lunar"
+                    style="@style/reset_btn"
+                    android:onClick="reset"
+                    android:text="Setel ulang" />
+            </FrameLayout>
+
+            <SeekBar
+                android:id="@+id/sb_lunar_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_week_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp" />
+
+                <Button
+                    android:id="@+id/btn_reset_week"
+                    style="@style/reset_btn"
+                    android:onClick="reset"
+                    android:text="Setel ulang" />
+            </FrameLayout>
+
+
+            <SeekBar
+                android:id="@+id/sb_week_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_holiday_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp" />
+
+                <Button
+                    android:id="@+id/btn_reset_holiday"
+                    style="@style/reset_btn"
+                    android:onClick="reset"
+                    android:text="Setel ulang" />
+            </FrameLayout>
+
+
+            <SeekBar
+                android:id="@+id/sb_holiday_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

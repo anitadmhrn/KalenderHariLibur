@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Kalender Hari Libur</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="nothing">Hari ini tidak menambahkan acara apa pun..</string>
+    <string name="is_today">Acara hari ini, hari ini </string>
+    <string name="zodiac">Zodiac</string>
+    <string name="more_event">Acara lainnya</string>
+    <string name="donate">Donasi</string>
+    <string name="thank_you">Terima Kasih </string>
+    <string name="not_interested">Tidak Tertarik </string>
+    <string name="however_thanks">Masih terima kasih atas dukungan Anda! Saya akan bekerja lebih keras</string>
+    <string name="thanks_very_much">Terima kasih banyak! Saya akan bekerja lebih keras</string>
+    <string name="donate_little">donasikan sedikit</string>
+    <string name="no_market">Pasar aplikasi tidak diinstal di sistem Anda</string>
+    <string name="today_things">Acara hari ini, hari ini</string>
+    <string name="day">hari</string>
+    <string name="till_xx_days_ago">%4d hari dari sekarang</string>
+    <string name="it_has_been_xx_days">Itu telah berlalu %4d hari </string>
+    <string name="xx_later">d hari setelah </string>
+    <string name="xx_before">d hari yang lalu </string>
+    <string name="cancel">Batalkan</string>
+    <string name="confirm">OK</string>
+    <string name="delete">delete</string>
+    <string name="do_not_delete">Jangan hapus </string>
+    <string name="setting">Pengaturan</string>
+    <string name="current_lunar_size">Ukuran font kalender Cina, saat ini %d</string>
+    <string name="current_week_size">ukuran font hari, saat ini %d </string>
+    <string name="current_number_size"> ukuran font nomor tanggal, saat ini %d </string>
+    <string name="current_holiday_size">ukuran font liburan, saat ini %d </string>
+    <string name="current_day_size">ukuran latar belakang tanggal, saat ini %d </string>
+    <string name="current_dpi">DPI, saat ini %d </string>
+    <string name="birthday">birthday</string>
+    <string name="xx_year">tahun %s </string>
+    <string name="xx_year_xx_month">Tahun%d Bulan %02d </string>
+    <string name="do_not_save">Jangan simpan </string>
+    <string name="whether_to_save">Apakah Anda ingin menyimpan konten saat ini?</string>
+    <string name="xx_year_xx_month_xx">Tahun %d Bulan %d Hari %d </string>
+    <string name="white_widget">widget putih</string>
+    <string name="transparent_widget">widget transparan</string>
+    <string name="load_wall_pager">Widget</string>
+    <string name="confirm_delete">Apakah Anda ingin menghapus acara ini?</string>
+    <string name="long_press_edit">tekan lama edit </string>
+    <string name="custom_symbol_comment">Komentar Simbol Kustom</string>
+
+    <string name="no_cardetails">Click on the button below to begin creating your reminder!</string>
+    <string name="title_activity_add_reminder">Add Reminder</string>
+    <string name="title_activity_edit_reminder">Edit Reminder</string>
+    <string name="title_activity_licenses">Licenses</string>
+
+    <string name="add_reminder">Reminder</string>
+    <string name="details">Details</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="repeat">Repeat</string>
+    <string name="repeat_off">Off</string>
+    <string name="repeat_no">Repetition Interval </string>
+    <string name="repeat_type">Type of Repetitions</string>
+
+    <string name="editor_activity_title_new_reminder">Add Reminder Details</string>
+    <string name="editor_activity_title_edit_reminder">Edit Reminder</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+
+    <string name="keep_editing">Keep Editing</string>
+    <string name="delete_dialog_msg">Delete this Reminder?</string>
+    <string name="editor_delete_reminder_failed">Error with deleting reminder</string>
+    <string name="action_discard_reminder">Discard Reminder</string>
+    <string name="action_save_reminder">Save Reminder</string>
+    <string name="reminder_title">AlarmReminder</string>
+
+    <string name="editor_delete_reminder_successful">Reminder deleted</string>
+    <string name="editor_insert_reminder_failed">Error with saving reminder</string>
+    <string name="editor_insert_reminder_successful">Reminder saved</string>
+    <string name="editor_update_reminder_failed">Error with updating reminder</string>
+    <string name="editor_update_reminder_successful">Reminder updated</string>
+
+    <array name="who">
+        <item>saya</item>
+        <item>Ayah</item>
+        <item>Ibu</item>
+        <item>suami</item>
+        <item>istri</item>
+        <item>putra</item>
+        <item>putri</item>
+        <item>Lainnya</item>
+    </array>
+</resources>
